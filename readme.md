@@ -19,6 +19,17 @@ Pour commencer voici ce qu'il faut faire au début de votre projet
         <meta name="description" content="">
         <title>Cours PHP</title>
     </head>
+    <body>
+        <header>
+        <h1>PHP Started!</h1> 
+        </header>
+        <main>
+            <!--contenu-->
+        </main>   
+    
+
+    </body>
+
 </html>
 ```
 ## Voir dans ce cours
