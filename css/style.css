@@ -15,12 +15,14 @@ h1,h2,h3,h4,ul,ol,p{
 	box-sizing: border-box;
 }
 header{
-        	background: #2980b9;
-        }
+        background: #2980b9;
+        position: relative;
+     }
         header h1{
         	text-align: center;
             line-height: 6.5rem;
             color: #fff;
+            cursor: pointer;
         }
    p,ul{
         	max-width: 80rem;
@@ -64,4 +66,18 @@ section address{
 footer p{
     border: 0;
     text-align: center;
+}
+/* theme event global */
+.accessible{
+    filter: grayscale(100%);
+}
+.icon{
+    position: absolute;
+    top: 1rem;
+    right: 4rem;
+    width: 6.4rem;
+    height: 6.4rem;
+    background: #fff;
+    border-radius: .8rem 0 .8rem 0;
+    cursor: pointer;
 }
