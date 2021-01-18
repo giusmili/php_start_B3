@@ -81,3 +81,7 @@ footer p{
     border-radius: .8rem 0 .8rem 0;
     cursor: pointer;
 }
+ul li img{
+    display: block;
+    margin: 0 auto;
+}

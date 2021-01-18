@@ -42,6 +42,24 @@ Pour commencer voici ce qu'il faut faire au début de votre projet
 * Les variables
 * Les tableaux
 
+## Les tableaux clé, valeur
+```php
+    //exemple 
+    $produit = ([
+        "marque"=>"Laden",
+        "Capacité"=>25,
+        "Consommation"=> 100,
+        "Prix"=>300, 
+        "photo"=>"https://image.darty.com/gros_electromenager/lavage_sechage/lave-linge_ouverture_dessus/proline_ptl5511_n_t2010124878493A_151655576.jpg"
+    ]);
+
+    //itération du tableau
+     foreach ($produit as $key => $value) {
+        print "\n".$key." ".$value;
+    }
+
+```
+
 
 
 

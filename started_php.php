@@ -23,7 +23,9 @@
 	<?php
          include_once("./src/main.inc.php");
     ?>
-    
+    <?php
+         include_once("./src/produit.inc.php");
+    ?>
     <!-- template footer -->
 	<?php
          include_once("./src/footer.inc.php");
