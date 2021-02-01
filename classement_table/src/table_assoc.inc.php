@@ -17,9 +17,9 @@
         echo "<tr>";
         foreach ($index as $key_1 => $value) {
             $numClass = $key++; // pour indexer la clé primary de 1
-            echo "<td>" . $key .  "</td>\n";
-            echo "<td>" . $key_1 .  "</td>\n";
-            echo "<td>" . $value .  "</td>\n";
+            echo "<td>" .$numClass.  "</td>\n";
+            echo "<td>" .$key_1.  "</td>\n";
+            echo "<td>" .$value.  "</td>\n";
         };
         echo "</tr>";
     };

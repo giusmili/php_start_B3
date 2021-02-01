@@ -5,7 +5,7 @@ body{
 	font: 1.6rem sans-serif; /* 16px 62.5% => 1.000*/
 	margin: 0;
 }
-h1,h2,h3,h4,ul,ol,p{
+h1,h2,h3,h4,ul,ol,p,figure{
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -13,6 +13,10 @@ h1,h2,h3,h4,ul,ol,p{
 }
 *{
 	box-sizing: border-box;
+}
+/* variable css */
+:root{
+    --theme-primary: #2980b9;
 }
 header{
         background: #2980b9;
@@ -84,4 +88,36 @@ footer p{
 ul li img{
     display: block;
     margin: 0 auto;
+}
+p{
+    text-align: center;
+}
+p a{
+    display: inline-block;
+    line-height: 5.5rem;
+    width: 20rem;
+    text-decoration: none;
+    color: #222;
+    background-color: #ccc;
+    margin-right: .8rem;
+    text-align: center;
+}
+/* bouton choix */
+.btn-primary{
+    background-color: var(--theme-primary);
+    color: #fff;
+}
+.btn-alert{
+    background-color: #c0392b;
+    color: #fff;
+}
+figure{
+    max-width: 40rem;
+    margin: 1.0rem auto;
+    text-align: center;
+}
+figure img{
+    display: inline-block;
+    max-width: 100%;
+    
 }
