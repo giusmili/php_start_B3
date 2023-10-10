@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;400&display=swap');
 html{
 	font-size: 62.5%;
 }
 body{
-	font: 1.6rem sans-serif; /* 16px 62.5% => 1.000*/
+	font: 1.6rem 'Roboto Slab',sans-serif; /* 16px 62.5% => 1.000*/
 	margin: 0;
 }
 h1,h2,h3,h4,ul,ol,p,figure{
@@ -14,6 +15,7 @@ h1,h2,h3,h4,ul,ol,p,figure{
 *{
 	box-sizing: border-box;
 }
+
 /* variable css */
 :root{
     --theme-primary: #2980b9;
@@ -27,24 +29,29 @@ header{
             line-height: 6.5rem;
             color: #fff;
             cursor: pointer;
+            font-weight: 400;
         }
    p,ul{
         	max-width: 80rem;
-           	line-height: 2.6rem;
+           	line-height: 3.6rem;
            	margin: 2.0rem auto 0;
-           	 background: #fafafa;
+           	background: #fafafa;
             border: solid 0.1rem #ccc;
             padding: 1.0rem;
+            font-weight: 200;
         }
     ul li:nth-child(2n+1){
-        	background: #222;
+        	background: #2980b9;
             color: #fff;
             padding: 0.5rem;
-        }
+    }
+    ul li:nth-of-type(5){
+        background-color: #fff;
+    }
 header h1::before{
-    content: url(https://cdn.iconscout.com/icon/free/png-256/php-76-555548.png);
+    /* content: url(https://cdn.iconscout.com/icon/free/png-256/php-76-555548.png);
     vertical-align: middle;
-    max-width: 50%;
+    max-width: 50%; */
 }
 
 section,footer{
@@ -57,6 +64,7 @@ section > h2{
     background: #34495e;
     color: #fff;
     line-height: 4.5rem;
+    font-weight: 400;
 }
 section > p {
     border: 0;
@@ -120,4 +128,48 @@ figure img{
     display: inline-block;
     max-width: 100%;
     
+}
+.form{
+    max-width: 90.0rem;
+    margin: 0 auto;
+    
+}
+.form input, .form label, select{
+    display: block;
+    width: 100%;
+    margin-bottom: .5rem;
+    line-height: 4.0rem;
+    padding: .5rem;
+}
+fieldset{
+    border: 0;
+}
+.form input[type="text"]{
+    border: solid .1rem transparent;
+    border-bottom-color: #999;
+    transition-duration: 0.9s;
+    outline: 0;
+}
+.form input[type="text"]:focus{
+    box-shadow: 0 0 1.0rem rgba(200,0,0,.8);
+}
+.form [placeholder], input[type="submit"]{
+    font-size: 1.6rem;
+}
+.form input[type="submit"]{
+    background-color: #16a085;
+    color: #fff;
+    border: 0;
+    border-radius: .4rem;
+    cursor: pointer;
+}
+.form input[type="radio"]{
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+}
+.form select{
+    padding: 1.0rem;
+    margin-top: 1.0rem;
+    border: solid .1rem transparent;
 }

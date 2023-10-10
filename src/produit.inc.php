@@ -1,19 +1,23 @@
 <?php
     $produit = ([
-        "marque"=>"Laden",
+        "Marque"=>"Laden",
         "Capacité"=>25,
         "Consommation"=> 100,
-        "Prix"=>300, 
-        "photo"=>"https://image.darty.com/gros_electromenager/lavage_sechage/lave-linge_ouverture_dessus/proline_ptl5511_n_t2010124878493A_151655576.jpg"
+        "Prix"=>450, 
+        "photo"=>"./asset/machine.png"
     ]);
     print "<ul>";
-    foreach ($produit as $key => $value) {
-        if($key!="photo"){ /* tester la propriété image*/
-        print "<li>".$key." ".$value."</li>\n";
+        foreach ($produit as $key => $value) {
+            $key === "Prix" ? print "<li>".$key." ".$value." &euro;</li>\n" : 
+            false; //ajouter euros
+
+                if($key!="photo"){ /* tester la propriété image*/
+                print "<li>".$key." ".$value."</li>\n";
+                }
+                else{
+                    print "\n".'<li><img src="'.$value.'"></li>';
+                }
+
         }
-        else{
-            print "\n".'<li><img src="'.$value.'"></li>';
-        }
-    }
     print "</ul>";
 ?>

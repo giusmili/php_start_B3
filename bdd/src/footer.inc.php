@@ -1,0 +1,1 @@
+<p>&copy; - MIT - <?php print date('Y')?>

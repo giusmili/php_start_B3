@@ -43,7 +43,7 @@ foreach ($print_out as $key => $index) {
 $tableau_gen = [];
 $lang = "fr";
 $code = 2021;
-
+//ajouter des élément à un tableau
 array_push($tableau_gen,$lang,$code);
 print_r($tableau_gen);
 
@@ -74,8 +74,31 @@ tableau à 2 dimensions x,x
  foreach ($table_assoc as $key => $index) {
           foreach($index as $key_1=>$value){
                print "<br>".$key." ".$key_1." ".$value;
-          }
+         }
  }
+
+ //exemple final
+ $i = 0; //exemple while
+   while($i < count($tab)){
+      
+        print $i." ".$tab[$i]."<br>"; //afficher 
+        $i++; //itérer
+   }
+   
+   //exemple
+   const user = [
+       "nom"=>"Mili",
+       "prenom" => "Gius",
+       "mail"=>"giusmili67@gmail.com"
+   ];
+   print_r(user);
+   foreach(user as $cle => $index){
+       if($cle!="mail")
+        print "<br>".$cle." ".$index."<br>";
+       else{
+            print '<br>'.$cle.' <a href="mailto:'.$index.'">Contact</a>'; 
+       }
+   }
 
 
 

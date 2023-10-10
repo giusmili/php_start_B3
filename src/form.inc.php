@@ -8,7 +8,7 @@
 
         if($code==$_SESSION["code"]){
             //print '<p>Bravo votre code est '.$code;
-            print '<p>Bravo votre code est '.$code;
+            print '<p>Bravo votre code est '.password_hash($code, PASSWORD_DEFAULT);//seulement pour les chaines
             
         }
         else{

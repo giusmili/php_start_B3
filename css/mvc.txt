@@ -1,9 +1,0 @@
-projet/
-        
-        src/
-    asset/
-    css/
-        index.php => templates
-        M = bdd
-        V = template
-        C = php event server / front
